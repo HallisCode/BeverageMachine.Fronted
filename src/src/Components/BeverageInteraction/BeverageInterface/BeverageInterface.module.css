@@ -1,0 +1,39 @@
+.BeverageInterface {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 15px;
+}
+
+.ScreenPanel {
+    flex-basis: 72%;
+    background-color: aquamarine;
+}
+
+.InteractionPanel {
+    flex-basis: 28%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    padding: 10px;
+}
+
+.InteractionPanel .BalancePanel 
+{
+    flex-grow: 1;
+}
+
+.InteractionPanel .CoinSelectpanel 
+{
+    flex-grow: 1;
+}
+
+.InteractionPanel .ChangePanel 
+{
+    flex-grow: 3;
+}
