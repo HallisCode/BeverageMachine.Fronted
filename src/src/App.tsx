@@ -21,7 +21,7 @@ function App() {
 
         if (keyValue != null) {
             const _beverageMaintenanceService = new BeverageMaintenanceService(
-                { keyName: keyValue, keyValue: keyValue }
+                { keyName: import.meta.env.VITE_ACCESS_KEY, keyValue: keyValue }
             );
 
             _beverageMaintenanceService.GetNumberCoinsAsync()
