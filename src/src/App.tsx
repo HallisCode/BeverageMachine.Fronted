@@ -21,7 +21,7 @@ function App() {
 
         if (keyValue != null) {
             const _beverageMaintenanceService = new BeverageMaintenanceService(
-                { keyName: "key", keyValue: keyValue }
+                { keyName: keyValue, keyValue: keyValue }
             );
 
             _beverageMaintenanceService.GetNumberCoinsAsync()
