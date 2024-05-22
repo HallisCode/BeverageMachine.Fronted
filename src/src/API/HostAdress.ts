@@ -1,3 +1,3 @@
-const hostAdress = "http://localhost:5000";
+const hostAdress = import.meta.env.VITE_BEVERAGEAPI_HOST;
 
 export default hostAdress;

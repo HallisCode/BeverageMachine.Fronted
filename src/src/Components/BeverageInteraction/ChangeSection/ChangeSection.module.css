@@ -1,5 +1,25 @@
+.ChangeSection {
+    height: 100%;
+    width: 100%;
+    padding: 3%;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-.ChangeSection 
-{
-    
+.ChangeSection .DispendingSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-content: flex-start;
+    overflow-y: auto;
+
+}
+
+.ChangeSection .DispendingSection>* {
+    flex: 0 0 calc(100% / 5);
 }

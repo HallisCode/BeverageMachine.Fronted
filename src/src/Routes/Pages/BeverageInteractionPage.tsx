@@ -1,6 +1,6 @@
-import BeverageInterface from "../Components/BeverageInteraction/BeverageInterface/BeverageInterface.tsx";
+import BeverageInterface from "../../Components/BeverageInteraction/BeverageInterface/BeverageInterface.tsx";
 
-import style from "./BeverageInteractionpage.module.css";
+import style from "./BeverageInteractionPage.module.css";
 
 function BeverageInteractionPage() {
 

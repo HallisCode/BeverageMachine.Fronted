@@ -1,0 +1,22 @@
+.Button {
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.Button img {
+    width: 100%;
+}
+
+.Button.Blocked {
+    filter: brightness(0.55);
+    background-color: transparent;
+    cursor: auto;
+}

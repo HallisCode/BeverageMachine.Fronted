@@ -1,4 +1,4 @@
-import ICoin from "../Models/Coin.ts";
+import ICoin from "../../Models/API/ICoin.ts";
 
 
 

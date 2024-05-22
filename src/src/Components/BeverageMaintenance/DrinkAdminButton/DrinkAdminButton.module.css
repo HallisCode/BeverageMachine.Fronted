@@ -1,0 +1,30 @@
+.DrinkAdminButton {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.DrinkAdminButton .Count
+{
+    text-align: center;
+}
+
+.iconDelete {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+}
+
+.iconEdit {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 28px;
+    z-index: 1;
+}

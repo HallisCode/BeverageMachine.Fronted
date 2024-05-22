@@ -1,0 +1,26 @@
+.DrinkSelectionBlock {
+    padding: 3%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    gap: 15px;
+}
+
+
+.DrinkSelectionBlock .Catalog {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.DrinkSelectionBlock .Catalog>* {
+    height: 25%;
+    width: 15%;
+}

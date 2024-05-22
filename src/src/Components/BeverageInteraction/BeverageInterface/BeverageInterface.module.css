@@ -10,12 +10,11 @@
 }
 
 .ScreenPanel {
-    flex-basis: 72%;
-    background-color: aquamarine;
+    flex: 0 0 72%;
 }
 
 .InteractionPanel {
-    flex-basis: 28%;
+    flex: 1;
     display: flex;
     flex-direction: column;
 
@@ -23,17 +22,38 @@
     padding: 10px;
 }
 
-.InteractionPanel .BalancePanel 
-{
-    flex-grow: 1;
+.InteractionPanel .BalancePanel {
+    flex: 2 0;
+    overflow: hidden;
 }
 
-.InteractionPanel .CoinSelectpanel 
-{
-    flex-grow: 1;
+.InteractionPanel .CoinSelectpanel {
+    flex: 2 0;
+    overflow: hidden;
 }
 
-.InteractionPanel .ChangePanel 
-{
-    flex-grow: 3;
+.InteractionPanel .OtherButtons {
+    flex: 1 0;
+    overflow: hidden;
+}
+
+.InteractionPanel .OtherButtons .Button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 3%;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.InteractionPanel .OtherButtons .Button:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.InteractionPanel .ChangePanel {
+    flex: 3 0;
+    overflow: hidden;
 }

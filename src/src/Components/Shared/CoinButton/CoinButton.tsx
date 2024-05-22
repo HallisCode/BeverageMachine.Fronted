@@ -1,16 +1,19 @@
 
-import style from "./CoinButton.module.css";
-import Coin from "../../../API/Models/Coin";
+import Coin from "../../../API/Models/API/ICoin";
 
-import oneRubleImage from "../../../../public/Images/Coins/1.png";
-import twoRubleImage from "../../../../public/Images/Coins/2.png";
-import fiveRubleImage from "../../../../public/Images/Coins/5.png";
-import tenRubleImage from "../../../../public/Images/Coins/10.png";
+import oneRubleImage from "../../../Assets/Images/1.png";
+import twoRubleImage from "../../../Assets/Images/2.png";
+import fiveRubleImage from "../../../Assets/Images/5.png";
+import tenRubleImage from "../../../Assets/Images/10.png";
+import Button from "../../UI/Button/Button";
+import ICoin from "../../../API/Models/API/ICoin";
 
-function CoinButton({ coin, isBlocked, onClick, imagePath = undefined }: {
+function CoinButton({ coin, isDisabled = false, isBlocked = false, onClick = undefined, imagePath = undefined }: {
     coin: Coin,
-    isBlocked: boolean, imagePath?: string | undefined,
-    onClick: Function
+    isDisabled?: boolean,
+    isBlocked?: boolean,
+    imagePath?: string,
+    onClick?: (coin: ICoin) => void
 }) {
 
     if (imagePath == undefined) {
@@ -31,10 +34,12 @@ function CoinButton({ coin, isBlocked, onClick, imagePath = undefined }: {
     }
 
     return (
-        <button className={style.CoinButton}
-            disabled={isBlocked} onClick={() => onClick()}>
-            <img className={isBlocked ? `${style.Blocked}` : ''} src={imagePath} />
-        </button>
+        <Button
+            isDisabled={isDisabled}
+            isBlocked={isBlocked}
+            onClick={() => onClick?.(coin)}>
+            <img src={imagePath} />
+        </Button>
     );
 }
 
